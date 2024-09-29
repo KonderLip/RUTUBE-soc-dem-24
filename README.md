@@ -9,6 +9,7 @@
 Использовался GigaChat, для запросов нужен "gigachain==0.1.17", готовый результат [time_diffs](/data/time_diffs.parquet)
 
 # Модели
-* [cb-solution](/cb-solution.ipynb) — на основе градиентного бустинга
+* [cb-solution](/cb-solution.ipynb) — на основе градиентного бустинга. Обучение происходит на 3 folds, 
+затем предсказания усредняются. Также подбираются веса классов возраста для максимизации F1 weighted
 * [events-supervised](/events-supervised-age_class.ipynb) — на основе ptls
 * [events-bert](/events-bert-age_class.ipynb) — на основе BertForSequenceClassification
